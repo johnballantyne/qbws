@@ -368,10 +368,10 @@
   <wsdl:service name="TroubleshootWebServiceFS">
     <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">WebService for QBFS created using ASP.NET to troubleshoot QuickBooks WebConnector</wsdl:documentation>
     <wsdl:port name="TroubleshootWebServiceFSSoap" binding="tns:TroubleshootWebServiceFSSoap">
-      <soap:address location="https://test.developer.intuit.com/QBWC/TroubleshootWebServiceFS/Service.asmxa" />
+      <soap:address location="https://test.developer.intuit.com/QBWC/TroubleshootWebServiceFS/Service.asmx" />
     </wsdl:port>
     <wsdl:port name="TroubleshootWebServiceFSSoap12" binding="tns:TroubleshootWebServiceFSSoap12">
-      <soap12:address location="https://test.developer.intuit.com/QBWC/TroubleshootWebServiceFS/Service.asmxb" />
+      <soap12:address location="https://test.developer.intuit.com/QBWC/TroubleshootWebServiceFS/Service.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
