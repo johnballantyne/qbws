@@ -1,5 +1,6 @@
-var http = require('http');
+var https = require('https');
 var soap = require('soap');
+var fs = require('fs');
 var myService = {
 	MyService: {
 	  MyPort: {
@@ -19,8 +20,12 @@ var myService = {
 	  }
 	}
 }
-var xml = require('fs').readFileSync('myservice.wsdl', 'utf8'),
-      server = http.createServer(function(request,response) {
+var xml = fs.readFileSync('myservice.wsdl', 'utf8'),
+      server = https.createServer({
+    key: fs.readFileSync('server-key.pem'),
+    cert: fs.readFileSync('server-cert.pem')
+}
+,function(request,response) {
           response.end("404: Not Found: "+request.url)
       });
 server.listen(8000);
