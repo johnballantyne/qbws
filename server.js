@@ -1,5 +1,7 @@
 var http = require('http');
 var soap = require('soap');
+var color = require('colors');
+
 var fs = require('fs');
 var myService = {
     HTTPWebService: {
@@ -35,12 +37,12 @@ server.listen(8000);
 var soapServer = soap.listen(server, '/wsdl', myService, xml);
 
 soapServer.authenticate = function(u, p) { 
-    console.log("AUTH: " + u + " " + p);
+    console.log("AUTH: ".red + u + " " + p);
     return true; 
 };
 
 soapServer.log = function(type, data) {
-    console.log("Log.type: " + type);
-    console.log("Log.data: " + data);
+    console.log("Log.type: ".yellow + type);
+    console.log("Log.data: ".yellow + data);
 };
 
