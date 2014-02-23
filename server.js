@@ -4,9 +4,9 @@ var fs = require('fs');
 var myService = {
     MyService: {
         MyPort: {
-            MyFunction: function(args) {
+            authenticate: function(args) {
                 return {
-                    name: args.name
+                    name: "hello"
                 };
             },
 
@@ -23,7 +23,12 @@ var myService = {
 
 var xml = fs.readFileSync('myservice.wsdl', 'utf8'),
 server = http.createServer(function(request,response) {
-    response.end("404: Not Found: "+request.url)
+    response.end("404: Not Found: " + request.url)
 });
+
 server.listen(8000);
-soap.listen(server, '/wsdl', myService, xml);
+soap.listen(server, '/wsdl', myService, xml).log = function(type, data) {
+    console.log(type);
+    console.log(data);
+};
+
