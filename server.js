@@ -2,7 +2,7 @@ var http = require('http');
 var soap = require('soap');
 var fs = require('fs');
 var myService = {
-    MyService: {
+    HTTPWebService: {
         authenticate: function(args) {
             console.log("!!!!! Function 1");
         },
