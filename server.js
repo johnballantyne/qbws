@@ -32,6 +32,9 @@ server = http.createServer(function(request,response) {
 });
 
 server.listen(8000);
-soap.listen(server, '/wsdl', myService, xml).log = function(type, data) {
+var soapServer = soap.listen(server, '/wsdl', myService, xml);
+soapServer.log = function(type, data) {
+    console.log("Log.type: " + type);
+    console.log("Log.data: " + data);
 };
 
