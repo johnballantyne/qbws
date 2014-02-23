@@ -1,7 +1,6 @@
-<!-- This is derived from the example XML file from the QB SDK -->
 <?xml version="1.0"?>
 <QBWCXML>
-<AppName>myService</AppName>
+<AppName>HTTPWebService</AppName>
 <AppID></AppID>
 <AppURL>http://localhost:8000/wsdl</AppURL>
 <AppDescription>A short description for WCWebService1</AppDescription>
