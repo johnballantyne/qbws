@@ -3,8 +3,13 @@ var soap = require('soap');
 var fs = require('fs');
 var myService = {
     MyService: {
+        authenticate: function(args) {
+            console.log("!!!!! Function 1");
+        },
+
         MyPort: {
             authenticate: function(args) {
+                console.log("!!!!! Function 2");
                 return {
                     name: "hello"
                 };
