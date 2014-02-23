@@ -29,11 +29,9 @@ var myService = {
 var xml = fs.readFileSync('myservice.wsdl', 'utf8'),
 server = http.createServer(function(request,response) {
     response.end("404: Not Found: " + request.url)
-    console.log(request.url);
 });
 
 server.listen(8000);
 soap.listen(server, '/wsdl', myService, xml).log = function(type, data) {
-    console.log(data);
 };
 
