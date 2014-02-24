@@ -4,13 +4,8 @@ var color = require('colors');
 
 var fs = require('fs');
 var myService = {
-    TroubleshootWebServiceFS: {
-        TroubleshootWebServiceFSSoap: {
-            serverVersion: function() {
-                console.log("Oh".red);
-            }
-        },
-        TroubleshootWebServiceFSSoap12: {
+    QBWebConnectorSvc: {
+        QBWebConnectorSvcSoap: {
             serverVersion: function() {
                 console.log("Oh".red);
             }
