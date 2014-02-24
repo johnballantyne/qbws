@@ -63,7 +63,7 @@ soapServer.serverVersion = function() {
 };
 
 soapServer.log = function(type, data) {
-    console.log("Log.type: ".yellow + type);
-    console.log("Log.data: ".yellow + data);
+    //console.log("Log.type: ".yellow + type);
+    //console.log("Log.data: ".yellow + data);
 };
 
