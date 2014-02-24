@@ -7,7 +7,13 @@ var myService = {
     QBWebConnectorSvc: {
         QBWebConnectorSvcSoap: {
             serverVersion: function() {
-                console.log("It does something!!!!!".green);
+                console.log("serverVersion Stub".yellow);
+            },
+            clientVersion: function() {
+                console.log("clientVersion Stub".yellow);
+            },
+            authenticate: function() {
+                console.log("authenticate Stub".yellow);
             }
         }
     }
