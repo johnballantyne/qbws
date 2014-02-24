@@ -12,6 +12,7 @@ var myService = {
             },
             clientVersion: function(strVersion) {
                 console.log("clientVersion Stub".yellow);
+                return null;
             },
             closeConnection: function(ticket) {
                 console.log("closeConnection Stub".red);
@@ -27,6 +28,7 @@ var myService = {
             },
             serverVersion: function() {
                 console.log("getServerVersion Stub".yellow);
+                return "node-qbwc v0.0.0.1";
             },
             interactiveDone: function() {
                 console.log("interactiveDone Stub".yellow);
