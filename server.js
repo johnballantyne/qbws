@@ -5,11 +5,15 @@ var color = require('colors');
 var fs = require('fs');
 var myService = {
     TroubleshootWebServiceFS: {
-        TroubleshootWebServiceFSSoap: function() {
-            console.log("Oh".red);
+        TroubleshootWebServiceFSSoap: {
+            serverVersion: function() {
+                console.log("Oh".red);
+            }
         },
-        TroubleshootWebServiceFSSoap12: function() {
-            console.log("Yeah".yellow);
+        TroubleshootWebServiceFSSoap12: {
+            serverVersion: function() {
+                console.log("Oh".red);
+            }
         }
     }
 };
