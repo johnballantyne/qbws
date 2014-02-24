@@ -24,7 +24,7 @@ var myService = {
             getLastError: function() {
                 console.log("getLastError Stub".yellow);
             },
-            getServerVersion: function() {
+            serverVersion: function() {
                 console.log("getServerVersion Stub".yellow);
             },
             interactiveDone: function() {
