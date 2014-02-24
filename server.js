@@ -10,9 +10,7 @@ var myService = {
         QBWebConnectorSvcSoap: {
             authenticate: function(strUserName, strPassword) {
                 console.log("authenticate Stub");
-                return { 
-                    arr: ['', 10]
-                };
+                return ["", "10"];
             },
             clientVersion: function(strVersion) {
                 console.log("clientVersion Stub".yellow);
