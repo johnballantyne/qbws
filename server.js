@@ -11,7 +11,9 @@ var myService = {
             authenticate: function(args) {
                 console.log("authenticate Stub".yellow);
                 console.log(args);
-                return ["", "10"];
+                return {
+                    authRet: ["", "10"]
+                };
             },
             clientVersion: function(strVersion) {
                 console.log("clientVersion Stub".yellow);
