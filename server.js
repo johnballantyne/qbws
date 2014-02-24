@@ -36,9 +36,8 @@ server = http.createServer(function(request,response) {
 server.listen(8000);
 var soapServer = soap.listen(server, '/wsdl', myService, xml);
 
-soapServer.authenticate = function(u, p) { 
-    console.log("AUTH: ".red + u + " " + p);
-    return true; 
+soapServer.authenticate = function(security) { 
+    console.log("AUTH: ".red + security);
 };
 
 soapServer.log = function(type, data) {
