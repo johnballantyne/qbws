@@ -9,8 +9,10 @@ var myService = {
     QBWebConnectorSvc: {
         QBWebConnectorSvcSoap: {
             authenticate: function(strUserName, strPassword) {
-                console.log("authenticate Stub: ".yellow + strUserName + " " + strPassword);
-                return ['', 10];
+                //console.log("authenticate Stub: ".yellow + strUserName + " " + strPassword);
+                return { 
+                    arr: ['', 10]
+                };
             },
             clientVersion: function(strVersion) {
                 console.log("clientVersion Stub".yellow);
@@ -29,7 +31,7 @@ var myService = {
                 console.log("getLastError Stub".yellow);
             },
             serverVersion: function() {
-                console.log("getServerVersion Stub".yellow);
+                console.log("serverVersion Stub".yellow);
                 return "node-qbwc v0.0.0.1";
             },
             interactiveDone: function() {
