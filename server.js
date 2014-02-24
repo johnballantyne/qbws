@@ -8,8 +8,9 @@ var fs = require('fs');
 var myService = {
     QBWebConnectorSvc: {
         QBWebConnectorSvcSoap: {
-            authenticate: function(strUserName, strPassword) {
-                console.log("authenticate Stub");
+            authenticate: function(args) {
+                console.log("authenticate Stub".yellow);
+                console.log(args);
                 return ["", "10"];
             },
             clientVersion: function(strVersion) {
