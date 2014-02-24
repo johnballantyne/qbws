@@ -4,30 +4,12 @@ var color = require('colors');
 
 var fs = require('fs');
 var myService = {
-    HTTPWebService: {
-        authenticate: function(args) {
-            console.log("!!!!! Function 1");
+    TroubleshootWebServiceFS: {
+        TroubleshootWebServiceFSSoap: function() {
+            console.log("Oh".red);
         },
-
-        MyPort: {
-            authenticate: function(args) {
-                console.log("!!!!! Function 2");
-                return {
-                    name: "hello"
-                };
-            },
-
-            clientVersion: function(args) {
-                console.log("AAAAA".green);
-            },
-
-            ClientVersion: function(args) {
-                console.log("BBBB".green);
-            },
-
-            clientVersionResponse: function(args) {
-                console.log("CCCCCC".green);
-            }
+        TroubleshootWebServiceFSSoap12: function() {
+            console.log("Yeah".yellow);
         }
     }
 };
