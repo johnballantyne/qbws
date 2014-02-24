@@ -40,7 +40,13 @@ server = http.createServer(function(request,response) {
 server.listen(8000);
 var soapServer = soap.listen(server, '/wsdl', myService, xml);
 
+soapServer.clientVersion = function() {
+    console.log("Help me".green);
+};
 
+soapServer.serverVersion = function() {
+    console.log("Help you".green);
+};
 
 soapServer.log = function(type, data) {
     console.log("Log.type: ".yellow + type);
