@@ -17,12 +17,16 @@ var myService = {
                 };
             },
 
-            // This is how to define an asynchronous function.  
-            MyAsyncFunction: function(args, callback) {
-                // do some work
-                callback({
-                    name: args.name
-                })
+            clientVersion: function(args) {
+                console.log("AAAAA".green);
+            },
+
+            ClientVersion: function(args) {
+                console.log("BBBB".green);
+            },
+
+            clientVersionResponse: function(args) {
+                console.log("CCCCCC".green);
             }
         }
     }
@@ -36,12 +40,7 @@ server = http.createServer(function(request,response) {
 server.listen(8000);
 var soapServer = soap.listen(server, '/wsdl', myService, xml);
 
-soapServer.authenticate = function(security) {
-    var created, nonce, password, user, token;
-    token = security.UsernameToken, user = token.Username,
-    password = token.Password, nonce = token.Nonce, created = token.Created;
-    return user === 'user' && password === soap.passwordDigest(nonce, created, 'password');
-};
+
 
 soapServer.log = function(type, data) {
     console.log("Log.type: ".yellow + type);
