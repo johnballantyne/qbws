@@ -6,14 +6,38 @@ var fs = require('fs');
 var myService = {
     QBWebConnectorSvc: {
         QBWebConnectorSvcSoap: {
-            serverVersion: function() {
-                console.log("serverVersion Stub".yellow);
+            authenticate: function(strUserName, strPassword) {
+                console.log("authenticate Stub: ".yellow + strUserName + " " + strPassword);
             },
-            clientVersion: function() {
+            clientVersion: function(strVersion) {
                 console.log("clientVersion Stub".yellow);
             },
-            authenticate: function() {
-                console.log("authenticate Stub".yellow);
+            closeConnection: function(ticket) {
+                console.log("closeConnection Stub".red);
+            },
+            connectionError: function(ticket, hresult, message) {
+                console.log("connectionError Stub".red);
+            },
+            getInteractiveURL: function() {
+                console.log("getInteractiveURL Stub".yellow);
+            },
+            getLastError: function() {
+                console.log("getLastError Stub".yellow);
+            },
+            getServerVersion: function() {
+                console.log("getServerVersion Stub".yellow);
+            },
+            interactiveDone: function() {
+                console.log("interactiveDone Stub".yellow);
+            },
+            interactiveRejected: function() {
+                console.log("interactiveRejected Stub".yellow);
+            },
+            receiveResponseXML: function() {
+                console.log("receiveResponseXML Stub".yellow);
+            },
+            sendRequestXML: function() {
+                console.log("sendRequestXML Stub".yellow);
             }
         }
     }
