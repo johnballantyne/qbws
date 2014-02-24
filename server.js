@@ -9,7 +9,7 @@ var myService = {
     QBWebConnectorSvc: {
         QBWebConnectorSvcSoap: {
             authenticate: function(strUserName, strPassword) {
-                //console.log("authenticate Stub: ".yellow + strUserName + " " + strPassword);
+                console.log("authenticate Stub");
                 return { 
                     arr: ['', 10]
                 };
