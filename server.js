@@ -1,13 +1,15 @@
+"use strict";
+
 var http = require('http');
 var soap = require('soap');
 var color = require('colors');
-
 var fs = require('fs');
+
 var myService = {
     QBWebConnectorSvc: {
         QBWebConnectorSvcSoap: {
             authenticate: function(strUserName, strPassword) {
-                console.log("authenticate Stub: ".yellow + strUserName.red + " " + strPassword.yellow);
+                console.log("authenticate Stub: ".yellow + strUserName + " " + strPassword);
                 return ['', 10];
             },
             clientVersion: function(strVersion) {
@@ -48,7 +50,7 @@ var myService = {
 
 var xml = fs.readFileSync('myservice.wsdl', 'utf8'),
 server = http.createServer(function(request,response) {
-    response.end("404: Not Found: " + request.url)
+    response.end("404: Not Found: " + request.url);
 });
 
 server.listen(8000);
