@@ -12,7 +12,7 @@ var myService = {
                 console.log("authenticate Stub".yellow);
                 console.log(args);
                 return {
-                    authenticateResponse: new Array("15c9ce293bd3f41b761c21635b14fa06", "10")
+                    authenticateResult: new Array("NVU", 10, 60, 60)
                 };
             },
             clientVersion: function(strVersion) {
@@ -58,14 +58,6 @@ server = http.createServer(function(request,response) {
 
 server.listen(8000);
 var soapServer = soap.listen(server, '/wsdl', myService, xml);
-
-soapServer.clientVersion = function() {
-    console.log("Help me".green);
-};
-
-soapServer.serverVersion = function() {
-    console.log("Help you".green);
-};
 
 soapServer.log = function(type, data) {
     console.log("Log.type: ".cyan + type);
