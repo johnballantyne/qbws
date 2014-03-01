@@ -20,6 +20,9 @@
     "jshint": "jshint server.js",
     "test": "npm run-script jshint"
   },
+  "devDependencies": {
+    "jshint": "2.1.x"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=0.8"
