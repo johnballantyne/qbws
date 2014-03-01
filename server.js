@@ -1,6 +1,4 @@
-﻿"use strict";
-
-var http = require('http');
+﻿var http = require('http');
 var soap = require('soap');
 var color = require('colors');
 var fs = require('fs');

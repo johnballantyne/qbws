@@ -16,6 +16,10 @@
     "colors"   :  "*",
     "soap"     :  "0.4.x"
   },
+  "scripts": {
+    "jshint": "jshint server.js",
+    "test": "npm run-script jshint"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=0.8"
