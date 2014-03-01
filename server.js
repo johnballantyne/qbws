@@ -9,7 +9,7 @@ var myService = {
     QBWebConnectorSvc: {
         QBWebConnectorSvcSoap: {
             serverVersion: function() {
-                var v = "node-qbwc v0.0.0.1";
+                var v = "node-qbwc v0.0.1";
                 serviceLog(("Server Version: " + v).green);
                 return {
                     serverVersionResult: v
