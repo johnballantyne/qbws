@@ -17,7 +17,7 @@
     "soap"     :  "0.4.x"
   },
   "scripts": {
-    "jshint": "jshint server.js",
+    "jshint": "jshint index.js test/client.js",
     "test": "npm run-script jshint"
   },
   "devDependencies": {
