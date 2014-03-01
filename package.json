@@ -1,0 +1,23 @@
+{
+  "name": "qbws",
+  "version": "0.0.0.1",
+  "author": "John Ballantyne <johnballantyne+npmjs@gmail.com>",
+  "description": "a web server for QuickBooks Web Connector integration",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnballantyne/qbws"
+  },
+  "keywords": [
+    "qbwc",
+    "QuickBooks",
+    "QuickBooks Web Connector"
+  ],
+  "dependencies" : {
+    "colors"   :  "*",
+    "soap"     :  "0.4.x",
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8"
+  }
+}
