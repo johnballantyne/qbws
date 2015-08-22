@@ -23,6 +23,36 @@
   "devDependencies": {
     "jshint": "2.1.x"
   },
+  "jshintConfig": {
+    "bitwise": true,
+    "curly": true,
+    "eqeqeq": true,
+    "es3": false,
+    "es5": false,
+    "forin": true,
+    "freeze": true,
+    "funcscope": false,
+    "futurehostile": true,
+    "latedef": "nofunc",
+    "noarg": true,
+    "nocomma": true,
+    "nonbsp": true,
+    "nonew": true,
+    "notypeof": false,
+    "shadow": "outer",
+    "singleGroups": true,
+    "undef": true,
+    "unused": true,
+    "varstmt": false,
+    "asi": false,
+    "boss": false,
+    "esnext": false,
+    "evil": false,
+    "expr": false,
+    "loopfunc": false,
+    "plusplus": true,
+    "node": true
+  },
   "license": "MIT",
   "engines": {
     "node": ">=0.8"
