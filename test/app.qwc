@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<QBWCXML>
+	<AppName>QuickBooks Integrator</AppName>
+	<AppID></AppID>
+	<AppURL>http://localhost:8000/wsdl</AppURL>
+	<AppDescription></AppDescription>
+	<AppSupport>http://localhost:8000/wsdl</AppSupport>
+	<UserName>username</UserName>
+	<OwnerID>{90A44FB7-33D9-4815-AC85-AC86A7E7D1EB}</OwnerID>
+	<FileID>{57F3B9B6-86F1-4FCC-B1FF-967DE1813D20}</FileID>
+	<QBType>QBFS</QBType>
+	<Scheduler>
+		<RunEveryNMinutes>2</RunEveryNMinutes>
+	</Scheduler>
+	<IsReadOnly>false</IsReadOnly>
+</QBWCXML>
