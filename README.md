@@ -17,11 +17,11 @@ Version 0.0.2 will be a loose port of [Intuit's WCWebService][1] provided in the
 - [x] `connectionError()`
 - [x] `getLastError()`
 - [x] `logEvent()`
+- [x] `getInteractiveURL()`
+- [x] `interactiveDone()`
+- [x] `interactiveRejected()`
 - [ ] `authenticate()` - needs uuid generator
 - [ ] `buildRequest()` - needs dynamic building
-- [ ] `getInteractiveURL()`
-- [ ] `interactiveDone()`
-- [ ] `interactiveRejected()`
 - [ ] `parseForVersion()`
 
 
