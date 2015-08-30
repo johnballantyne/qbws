@@ -128,7 +128,7 @@
     "disallowSpaceAfterObjectKeys": true,
     "maximumLineLength": 180,
     "requireCamelCaseOrUpperCaseIdentifiers": true,
-    "requireCapitalizedComments": true,
+    "requireCapitalizedComments": false,
     "requireSpaceAfterLineComment": true,
     "requireSpacesInFunction": {
         "beforeOpeningCurlyBrace": true
