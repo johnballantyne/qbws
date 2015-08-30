@@ -13,8 +13,9 @@
     "QuickBooks Web Connector"
   ],
   "dependencies" : {
-    "colors"   :  "*",
-    "soap"     :  "0.4.x"
+    "colors": "*",
+    "chalk": "1.1.1",
+    "soap": "0.4.x"
   },
   "scripts": {
     "jshint": "jshint index.js test/client.js",
@@ -125,7 +126,7 @@
     "requireSpaceBeforeObjectValues": true,
     "disallowQuotedKeysInObjects": true,
     "disallowSpaceAfterObjectKeys": true,
-    "maximumLineLength": 80,
+    "maximumLineLength": 180,
     "requireCamelCaseOrUpperCaseIdentifiers": true,
     "requireCapitalizedComments": true,
     "requireSpaceAfterLineComment": true,
