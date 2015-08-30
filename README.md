@@ -20,9 +20,9 @@ Version 0.0.2 will be a loose port of [Intuit's WCWebService][1] provided in the
 - [x] `getInteractiveURL()`
 - [x] `interactiveDone()`
 - [x] `interactiveRejected()`
+- [x] `parseForVersion()`
 - [ ] `authenticate()` - needs uuid generator
 - [ ] `buildRequest()` - needs dynamic building
-- [ ] `parseForVersion()`
 
 
  [1]: https://developer-static.intuit.com/qbsdk-current/samples/readme.html#WCWebService (C# ASP.NET) (qbxml) (desktop)
