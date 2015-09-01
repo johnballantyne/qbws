@@ -15,7 +15,8 @@
   "dependencies" : {
     "colors": "*",
     "chalk": "1.1.1",
-    "soap": "0.4.x"
+    "soap": "0.4.x",
+    "xmldom": "0.1.19"
   },
   "scripts": {
     "jshint": "jshint index.js test/client.js",
