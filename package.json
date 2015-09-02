@@ -1,6 +1,6 @@
 {
   "name": "qbws",
-  "version": "0.0.1",
+  "version": "0.1.9",
   "author": "John Ballantyne <johnballantyne+npmjs@gmail.com>",
   "description": "a web server for QuickBooks Web Connector integration",
   "repository": {
@@ -13,10 +13,10 @@
     "QuickBooks Web Connector"
   ],
   "dependencies" : {
-    "colors": "*",
+    "soap": "0.9.1",
     "chalk": "1.1.1",
-    "soap": "0.4.x",
-    "xmldom": "0.1.19"
+    "xmlbuilder": "2.6.4",
+    "node-uuid": "1.4.3"
   },
   "scripts": {
     "jshint": "jshint index.js test/client.js",
@@ -139,6 +139,6 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=0.8"
+    "node": ">= 0.12.7"
   }
 }
