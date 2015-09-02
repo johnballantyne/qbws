@@ -11,8 +11,8 @@ This project replicates the functionality of the C# web service found in the QBS
 
 Install the package using `npm install qbws`. The following code is all you need to run the server:
 
-> var qbws = require('qbws');
-> qbws.run();
+    var qbws = require('qbws');
+    qbws.run();
 
 ## Next Milestones ##
  - v0.2.0: loose port of [Intuit's WCWebService][1] provided in the QBSDK samples. (mostly complete; pending code review)
