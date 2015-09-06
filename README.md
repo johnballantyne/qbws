@@ -17,7 +17,7 @@ Install the package using `npm install qbws`. The following code is all you need
 ## Changelog ##
 
 #### v0.2.0 ####
- - Functional port of [Intuit's WCWebService[1] provided in the QBSDK samples
+ - Functional port of [Intuit's WCWebService][1] provided in the QBSDK samples
  - Many things are hard coded for demonstration purposes:
    - Login credentials
    - Requests (CustomerQuery, InvoiceQuery, BillQuery)
@@ -29,4 +29,4 @@ Install the package using `npm install qbws`. The following code is all you need
 
 
  [1]: https://developer-static.intuit.com/qbsdk-current/samples/readme.html#WCWebService%20(C#%20ASP.NET)%20(qbxml)%20(desktop)
-
+ 
