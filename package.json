@@ -1,6 +1,6 @@
 {
   "name": "qbws",
-  "version": "0.1.10",
+  "version": "0.2.0",
   "author": "John Ballantyne <johnballantyne+npmjs@gmail.com>",
   "description": "a web server for QuickBooks Web Connector integration",
   "repository": {
