@@ -27,6 +27,12 @@ Install the package using `npm install qbws`. The following code is all you need
  - v0.2.1: Include documentation for all functions (likely using JSDoc)
  - v0.3.0: Conversion to Node.js utility
 
+## Feature Wishlist ##
+ - Conversion to asynchronous architecture for the service methods
+ - QBXML validation using a [separate package][2]
+   - Likely to be optional as this could potentially slow down response time by a significant amount for large queries
+ - Module config settings
 
  [1]: https://developer-static.intuit.com/qbsdk-current/samples/readme.html#WCWebService%20(C#%20ASP.NET)%20(qbxml)%20(desktop)
+ [2]: https://github.com/johnballantyne/qbxml
  
