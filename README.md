@@ -1,5 +1,6 @@
 qbws
 =========
+[![npm version](http://img.shields.io/npm/v/qbws.svg)](https://www.npmjs.com/package/qbws)
 
 This sample is a Node.js web service application that communicates with QuickBooks via QBWebConnector. The sample focuses primarily on demonstrating how to setup all web service web methods to run against QBWebConnector and does not focus on any particular use case. For simplicity, it sends three request XMLs: CustomerQuery, InvoiceQuery and BillQuery.
 
