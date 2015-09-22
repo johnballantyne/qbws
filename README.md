@@ -40,4 +40,5 @@ Install the package using `npm install qbws`. The following code is all you need
 
  [1]: https://developer-static.intuit.com/qbsdk-current/samples/readme.html#WCWebService%20(C#%20ASP.NET)%20(qbxml)%20(desktop)
  [2]: https://github.com/johnballantyne/qbxml
+ [3]: https://github.com/johnballantyne/qbws/issues/3 "SendRequestXMLfailed without any jobs"
  
