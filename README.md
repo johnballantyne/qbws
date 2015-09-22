@@ -17,6 +17,10 @@ Install the package using `npm install qbws`. The following code is all you need
 
 ## Changelog ##
 
+#### v0.2.1 ####
+ - Correct `authenticate()` and `sendRequestXML()` (see [issue #3][3])
+ - Added a bunch of JSDoc style comments
+
 #### v0.2.0 ####
  - Functional port of [Intuit's WCWebService][1] provided in the QBSDK samples
  - Many things are hard coded for demonstration purposes:
@@ -25,7 +29,7 @@ Install the package using `npm install qbws`. The following code is all you need
    - Company file location
 
 ## Next Milestones ##
- - v0.2.1: Include documentation for all functions (likely using JSDoc)
+ - v0.2.2: Include documentation for all functions (likely using JSDoc)
  - v0.3.0: Conversion to Node.js utility
 
 ## Feature Wishlist ##
