@@ -306,7 +306,7 @@
   </wsdl:binding>
   <wsdl:service name="QBWebConnectorSvc">
     <wsdl:port name="QBWebConnectorSvcSoap" binding="tns:QBWebConnectorSvcSoap">
-      <soap:address location="https://idn.vogelfam.net/QBMSDonorSample/QBWebConnectorSvc.asmx" />
+        <soap:address location="http://localhost:8000/wsdl?wsdl" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
