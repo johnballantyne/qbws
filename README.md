@@ -9,19 +9,25 @@ not focus on any particular use case. For simplicity, it sends three request
 XMLs: CustomerQuery, InvoiceQuery and BillQuery.
 
 ## Status ##
-
 This project replicates the functionality of the ASP.NET web service found in
 the QBSDK. Unfortunately that means some things are hard coded that should not
 be, and other things are left unimplemented. Eventually, qbws will diverge from
 that C# example to serve less of an SDK example and more as a reliable utility.
 
 ## Usage ##
-
 Install the package using `npm install qbws`. The following code is all you
 need to run the service:
 
     var qbws = require('qbws');
     qbws.run();
+
+## Documentation ##
+The QuickBooks Web Connector Programmer's Guide is a very useful resource to
+understand how the Web Connector operates and how to write a custom web service
+to interact with it. 
+
+API documentation for qbws is available [here][4]. Many of that information is
+taken directly from the QBWC Programmer's Guide.
 
 ## Changelog ##
 
@@ -50,4 +56,4 @@ need to run the service:
  [1]: https://developer-static.intuit.com/qbsdk-current/samples/readme.html#WCWebService%20(C#%20ASP.NET)%20(qbxml)%20(desktop)
  [2]: https://github.com/johnballantyne/qbxml
  [3]: https://github.com/johnballantyne/qbws/issues/3 "SendRequestXMLfailed without any jobs"
-
+ [4]: docs/qbws-api.md
