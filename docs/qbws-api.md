@@ -57,10 +57,10 @@
 Fetches the wsdl file; address location is changed if set in config.
 
 **Kind**: global function  
-**Summary**: If needed, set `&#x27;wsdlAddress&#x27;` within config to build a correct
-  wsdl file. This is likely unecessary if you&#x27;re not connecting to your web
+**Summary**: If needed, set `'wsdlAddress'` within config to build a correct
+  wsdl file. This is likely unecessary if you're not connecting to your web
   service with a client other than the QuickBooks Web Connector. The Web
-  Connector doesn&#x27;t seem to care if the address location is incorrect, but
+  Connector doesn't seem to care if the address location is incorrect, but
   connecting using a client created with the soap package does.  
 **Returns**: <code>String</code> - The wsdl file.  
 
@@ -144,16 +144,16 @@ An optional callback that allows the web service to evaluate the
   strongly recommended.
 
   Supply one of the following return strings:
-  - `&#x27;NULL&#x27;` or `&#x27;&#x27;` (empty string) if you want the Web Connector to proceed
+  - `'NULL'` or `''` (empty string) if you want the Web Connector to proceed
     with the update.
-  - `&#x27;W:&lt;any text&gt;&#x27;` if you want the web Connector to display a WARNING
+  - `'W:&lt;any text&gt;'` if you want the web Connector to display a WARNING
     dialog prompting the user to continue with the update or cancel it. The
-    text string after the `&#x27;W:&#x27;` will be displayed in the warning dialog.
-  - `&#x27;E:&lt;any text&gt;&#x27;` if you want to cancel the update and display an ERROR
-    dialog. The text string after `&#x27;E:&#x27;` will be displayed in the error
+    text string after the `'W:'` will be displayed in the warning dialog.
+  - `'E:&lt;any text&gt;'` if you want to cancel the update and display an ERROR
+    dialog. The text string after `'E:'` will be displayed in the error
     dialog. The user will have to download a new version of the Web
     Connector to continue with the update.
-  - `&#x27;O:&lt;version number&gt;&#x27;` to tell the user that the server expects a newer
+  - `'O:&lt;version number&gt;'` to tell the user that the server expects a newer
     version of QBWC than the user currently has but also tells the user
     which version is needed.  
 
