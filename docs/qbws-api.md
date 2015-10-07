@@ -20,7 +20,7 @@
 <dd><p>Logs qbws method calls and their parameters.</p>
 </dd>
 <dt><a href="#serverVersion">serverVersion()</a> ⇒ <code>String</code></dt>
-<dd><p>To enable web service with its version number returned back to QBWC.</p>
+<dd><p>Communicates the web service&#39;s version number to the client.</p>
 </dd>
 <dt><a href="#clientVersion">clientVersion()</a> ⇒ <code>String</code></dt>
 <dd><p>An optional callback that allows the web service to evaluate the
@@ -31,7 +31,7 @@
   trying to connect.</p>
 </dd>
 <dt><a href="#sendRequestXML">sendRequestXML()</a> ⇒ <code>String</code></dt>
-<dd><p>This web method send the request XML to the client which should
+<dd><p>This web method sends the request XML to the client which should
   process the request within QuickBooks.</p>
 </dd>
 <dt><a href="#closeConnection">closeConnection()</a> ⇒ <code>String</code></dt>
@@ -52,13 +52,12 @@
   QuickBooks via the Web Connector.</p>
 </dd>
 </dl>
-
 <a name="buildWsdl"></a>
 ## buildWsdl(wsdlFileLocation) ⇒ <code>String</code>
 Fetches the wsdl file; address location is changed if set in config.
 
 **Kind**: global function  
-**Summary**: If needed, set &#x60;&#x27;wsdlAddress&#x60;&#x27; within config to build a correct
+**Summary**: If needed, set &#x60;&#x27;wsdlAddress&#x27;&#x60; within config to build a correct
   wsdl file. This is likely unecessary if you&#x27;re not connecting to your web
   service with a client other than the QuickBooks Web Connector. The Web
   Connector doesn&#x27;t seem to care if the address location is incorrect, but
@@ -74,6 +73,8 @@ Fetches the wsdl file; address location is changed if set in config.
 Returns an array of sample QBXML requests
 
 **Kind**: global function  
+**Summary**: These QBXML requests are hard coded in to provide examples. This
+  should be replaced with something dynamic.  
 **Returns**: <code>String</code> &#124; <code>Array</code> - QBXML requests: CustomerQuery, InvoiceQuery and
   BillQuery  
 <a name="parseForVersion"></a>
@@ -129,7 +130,7 @@ Logs qbws method calls and their parameters.
 
 <a name="serverVersion"></a>
 ## serverVersion() ⇒ <code>String</code>
-To enable web service with its version number returned back to QBWC.
+Communicates the web service's version number to the client.
 
 **Kind**: global function  
 **Returns**: <code>String</code> - qbws's version number  
@@ -143,18 +144,19 @@ An optional callback that allows the web service to evaluate the
   strongly recommended.
 
   Supply one of the following return strings:
-  - &quot;NULL&quot; or &quot;&quot; (empty string) if you want the Web Connector to proceed
+  - &#x60;&#x27;NULL&#x27;&#x60; or &#x60;&#x27;&#x27;&#x60; (empty string) if you want the Web Connector to proceed
     with the update.
-  - &quot;W:&lt;any text&gt;&quot; if you want the web Connector to display a WARNING dialog
-    prompting the user to continue with the update or cancel it. The text
-    string after the &quot;W:&quot; will be displayed in the warning dialog.
-  - &quot;E:&lt;any text&gt;&quot; if you want to cancel the update and display an ERROR
-    dialog. The text string after &quot;E:&quot; will be displayed in the error
+  - &#x60;&#x27;W:&lt;any text&gt;&#x27;&#x60; if you want the web Connector to display a WARNING
+    dialog prompting the user to continue with the update or cancel it. The
+    text string after the &#x60;&#x27;W:&#x27;&#x60; will be displayed in the warning dialog.
+  - &#x60;&#x27;E:&lt;any text&gt;&#x27;&#x60; if you want to cancel the update and display an ERROR
+    dialog. The text string after &#x60;&#x27;E:&#x27;&#x60; will be displayed in the error
     dialog. The user will have to download a new version of the Web
     Connector to continue with the update.
-  - &quot;O:&lt;version number&gt;&quot; to tell the user that the server expects a newer
+  - &#x60;&#x27;O:&lt;version number&gt;&#x27;&#x60; to tell the user that the server expects a newer
     version of QBWC than the user currently has but also tells the user
     which version is needed.  
+
 **Returns**: <code>String</code> - A string telling the Web Connector what to do next.  
 
 | Param | Type | Description |
@@ -167,15 +169,17 @@ Verifies the username and password for the Web Connector that is
   trying to connect.
 
 **Kind**: global function  
+**Summary**: The current username and password values are hard-coded for
+  demonstration. You should replace this with your own authentication.  
 **Returns**: <code>String</code> &#124; <code>Array</code> - Instructions for QuickBooks to proceed with update.
 
   Possible return values
   - string[0] = ticket
   - string[1]
-  - empty string = use current company file
-  - "none" = no further request/no further action required
-  - "nvu" = not valid user
-  - any other string value = use this company file  
+    - `''` (empty string) = use current company file
+    - `'none'` = no further request/no further action required
+    - `'nvu'` = not valid user
+    - any other string value = use this company file  
 
 | Param | Type |
 | --- | --- |
@@ -184,7 +188,7 @@ Verifies the username and password for the Web Connector that is
 
 <a name="sendRequestXML"></a>
 ## sendRequestXML() ⇒ <code>String</code>
-This web method send the request XML to the client which should
+This web method sends the request XML to the client which should
   process the request within QuickBooks.
 
 **Kind**: global function  
@@ -199,8 +203,6 @@ This web method send the request XML to the client which should
 | args.strHCPResponse | <code>String</code> | 
 | args.strCompanyFileName | <code>String</code> | 
 | args.Country | <code>String</code> | 
-| args.qbXMLMajorVers | <code>Number</code> | 
-| args.qbXMLMinorVers | <code>Number</code> | 
 
 <a name="closeConnection"></a>
 ## closeConnection() ⇒ <code>String</code>
@@ -215,7 +217,7 @@ Called by the Web Connector at the end of a successful update session.
 <a name="connectionError"></a>
 ## connectionError() ⇒ <code>String</code>
 **Kind**: global function  
-**Returns**: <code>String</code> - Returns 'done' if no further action is required by from
+**Returns**: <code>String</code> - Returns `'done'` if no further action is required by from
   the client or the company file location.  
 
 | Param | Type | Description |
