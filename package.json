@@ -12,46 +12,37 @@
     "QuickBooks",
     "QuickBooks Web Connector"
   ],
-  "dependencies" : {
+  "dependencies": {
     "soap": "0.9.1",
     "chalk": "1.1.1",
     "xmlbuilder": "2.6.4",
     "node-uuid": "1.4.3"
   },
+  "devDependencies": {
+    "jshint": "2.1.x",
+    "jsdoc-to-markdown": "1.2.0"
+  },
   "scripts": {
     "jshint": "jshint index.js test/client.js",
-    "test": "npm run-script jshint"
-  },
-  "devDependencies": {
-    "jshint": "2.1.x"
+    "test": "npm run-script jshint",
+    "docs": "jsdoc2md -t jsdoc2md/qbws-api.hbs lib/qbws.js > docs/qbws-api.md"
   },
   "jshintConfig": {
     "bitwise": true,
     "curly": true,
     "eqeqeq": true,
-    "es3": false,
-    "es5": false,
     "forin": true,
     "freeze": true,
-    "funcscope": false,
     "futurehostile": true,
     "latedef": "nofunc",
     "noarg": true,
     "nocomma": true,
     "nonbsp": true,
     "nonew": true,
-    "notypeof": false,
     "shadow": "outer",
     "singleGroups": true,
     "undef": true,
     "unused": true,
-    "varstmt": false,
-    "asi": false,
-    "boss": false,
-    "esnext": false,
-    "evil": false,
-    "expr": false,
-    "loopfunc": false,
     "plusplus": true,
     "node": true
   },
